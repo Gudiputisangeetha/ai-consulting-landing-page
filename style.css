@@ -2,9 +2,24 @@
 
 .site-footer {
   text-align: center;
-  padding: 20px;
-  background-color: #0f172a;
+  padding: 16px 20px;       /* smaller on mobile, not too tall */
+  background-color: #0f1724;
   color: #e5e7eb;
   font-size: 14px;
   margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .site-footer {
+    padding: 20px 0;         /* more padding on tablets & desktop */
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-footer {
+    padding: 24px 0;         /* even more on large screens */
+    font-size: 16px;
+  }
 }
