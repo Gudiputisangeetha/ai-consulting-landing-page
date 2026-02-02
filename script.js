@@ -1,4 +1,4 @@
-﻿// Configuration: Formspree endpoint for contact form
+﻿﻿// Configuration: Formspree endpoint for contact form
 const FORM_ENDPOINT = "https://formspree.io/f/mlgnkgnz"; // Formspree form endpoint
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -76,4 +76,3 @@ else form.name.removeAttribute('aria-invalid');
 		status.className = 'form-status';
 	}
 });
-
