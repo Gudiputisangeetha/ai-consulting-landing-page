@@ -1,144 +1,143 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<!-- Preconnect to main site & external resources -->
-    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
-    
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <title>AI Consulting — Strategy & Development</title>
 
+  <!-- Performance -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
 
-
-	<title>AI Consulting — Strategy & Development</title>
-	<link rel="stylesheet" href="style.css">
+  <!-- SEO -->
+  <meta name="description" content="AI consulting services helping businesses design, build, and scale practical AI solutions that drive measurable results.">
 </head>
+
 <body>
-	<header class="site-header">
-		<div class="container header-inner">
-			<a class="brand" href="#">AI Consulting</a>
-			<nav class="site-nav" aria-label="Primary">
-				<a href="#services">Services</a>
-				<a href="#why">Why</a>
-				<a href="#contact">Contact</a>
-			</nav>
-		</div>
-	</header>
 
-	<main>
-		<section class="hero" id="home">
-			<div class="container hero-inner">
-				<div class="hero-copy">
-					<h1>Build practical AI that drives business results</h1>
-					<p class="lead">We design, implement, and scale AI solutions focused on measurable outcomes — from prototypes to production.</p>
-					<p class="hero-ctas">
-						<a class="btn primary" href="#contact">Get a free consult</a>
-						<a class="btn ghost" href="#services">See services</a>
-					</p>
-				</div>
-				<div class="hero-visual" aria-hidden="true">
-					<div class="card-visual">AI + Strategy</div>
-				</div>
-			</div>
-		</section>
+<header class="site-header container">
+  <a class="brand" href="#">AI Consulting</a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#services">Services</a>
+    <a href="#why">Why</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-		<section class="services" id="services">
-			<div class="container">
-				<h2>Services</h2>
-				<p class="section-intro">End-to-end AI services tailored to your business needs.</p>
-				<div class="cards">
-					<article class="card">
-						<h3>Strategy & Roadmapping</h3>
-						<p>We identify high-impact AI opportunities and create a realistic roadmap aligned with business KPIs.</p>
-					</article>
-					<article class="card">
-						<h3>Proofs of Concept</h3>
-						<p>Rapid prototypes to validate feasibility and quantify value before investing in production.</p>
-					</article>
-					<article class="card">
-						<h3>Production ML</h3>
-						<p>Robust model deployment, monitoring, and MLOps practices to keep models reliable at scale.</p>
-					</article>
-				</div>
-			</div>
-		</section>
+<main>
 
-		<section class="why" id="why">
-			<div class="container">
-				<h2>Why choose us</h2>
-				<div class="why-grid">
-					<div>
-						<h3>Outcome-focused</h3>
-						<p>We measure success by business impact, not experiments — clear KPIs and tracking from day one.</p>
-					</div>
-					<div>
-						<h3>Practical engineering</h3>
-						<p>We deliver maintainable systems with observability, testing, and repeatable deployment patterns.</p>
-					</div>
-					<div>
-						<h3>Cross-functional expertise</h3>
-						<p>Combining product, design, and ML expertise to ship usable, reliable features.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-copy">
+        <h1>Build practical AI that drives business results</h1>
+        <p class="lead">
+          We design, implement, and scale AI solutions focused on measurable outcomes — from prototypes to production.
+        </p>
+        <p class="hero-ctas">
+          <a class="btn primary" href="#contact">Get a free consult</a>
+          <a class="btn ghost" href="#services">See services</a>
+        </p>
+      </div>
 
-		<section class="contact" id="contact">
-			<div class="container">
-				<h2>Contact — let's talk</h2>
-				<p class="section-intro">Tell us about your project and we'll follow up with next steps.</p>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="card-visual">AI + Strategy</div>
+      </div>
+    </div>
+  </section>
 
-			<form id="contactForm" class="contact-form" action="https://formspree.io/f/mlgnkgnz" method="POST" novalidate>
-				<div class="form-row">
-					<label for="name">Name</label>
-					<input id="name" name="name" type="text" required>
-				</div>
-					<div class="form-row">
-						<label for="email">Email</label>
-						<input id="email" name="email" type="email" required>
-					</div>
-					<div class="form-row">
-						<label for="subject">Subject</label>
-						<input id="subject" name="subject" type="text">
-					</div>
-					<div class="form-row">
-						<label for="message">Message</label>
-						<textarea id="message" name="message" rows="6" required></textarea>
-					</div>
-					<div class="form-row actions">
-						<button type="submit" class="btn primary">Send message</button>
-						<button type="reset" class="btn ghost">Reset</button>
-					</div>
-					<div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
-				</form>
+  <section class="services container" id="services">
+    <h2>Services</h2>
+    <p class="section-intro">End-to-end AI services tailored to your business needs.</p>
 
-				<p class="contact-fallback">No JavaScript? You can email us at <a href="mailto:hello@example.com">gudiputisangeetha@gmail.com</a>.</p>
-			</div>
-		</section>
-	</main>
+    <div class="cards">
+      <article class="card">
+        <h3>Strategy & Roadmapping</h3>
+        <p>We identify high-impact AI opportunities and create a realistic roadmap aligned with business KPIs.</p>
+      </article>
 
-	<footer class="site-footer">
-		<div class="container footer-inner">
-			<small>&copy; <span id="year"></span> AI Consulting</small>
-			<nav class="footer-nav">
-				<a href="#privacy">Privacy</a>
-			</nav>
-		</div>
-	</footer>
+      <article class="card">
+        <h3>Proofs of Concept</h3>
+        <p>Rapid prototypes to validate feasibility and quantify value before investing in production.</p>
+      </article>
 
-	<script src="script.js" defer></script>
-</body>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <small>&copy; <span id="year"></span> AI Consulting</small>
-    <nav class="footer-nav">
-      <a href="#privacy">Privacy</a>
-    </nav>
-  </div>
+      <article class="card">
+        <h3>Production ML</h3>
+        <p>Robust model deployment, monitoring, and MLOps practices to keep models reliable at scale.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="why container" id="why">
+    <h2>Why choose us</h2>
+
+    <div class="why-grid">
+      <div>
+        <h3>Outcome-focused</h3>
+        <p>We measure success by business impact, not experiments — clear KPIs and tracking from day one.</p>
+      </div>
+      <div>
+        <h3>Practical engineering</h3>
+        <p>We deliver maintainable systems with observability, testing, and repeatable deployment patterns.</p>
+      </div>
+      <div>
+        <h3>Cross-functional expertise</h3>
+        <p>Combining product, design, and ML expertise to ship usable, reliable features.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact container" id="contact">
+    <h2>Contact — let's talk</h2>
+    <p class="section-intro">Tell us about your project and we'll follow up with next steps.</p>
+
+    <form id="contactForm" class="contact-form"
+          action="https://formspree.io/f/mlgnkgnz"
+          method="POST" novalidate>
+
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text">
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+
+      <div class="form-row actions">
+        <button type="submit" class="btn primary">Send message</button>
+        <button type="reset" class="btn ghost">Reset</button>
+      </div>
+
+      <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+    </form>
+
+    <p class="contact-fallback">
+      No JavaScript? Email us at
+      <a href="mailto:gudiputisangeetha@gmail.com">gudiputisangeetha@gmail.com</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer container">
+  <small>&copy; <span id="year"></span> AI Consulting</small>
+  <nav class="footer-nav">
+    <a href="#privacy">Privacy</a>
+  </nav>
 </footer>
 
-
-
+<script src="script.js" defer></script>
+</body>
 </html>
-
